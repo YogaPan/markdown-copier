@@ -1,0 +1,14 @@
+{
+  "name": "Markdown Copier",
+  "version": "0.0.1",
+  "description": "Markdown Copier",
+  "permissions": ["declarativeContent", "storage", "tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

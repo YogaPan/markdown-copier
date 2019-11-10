@@ -1,0 +1,36 @@
+{
+  "name": "Markdown Copier",
+  "version": "0.0.1",
+  "description": "Markdown Copier",
+  "permissions": ["activeTab", "contextMenus"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistant": true
+  },
+  "browser_action": {
+    "default_icon": "icontest.png",
+    "default_title": "Markdown Copier"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L",
+        "chromeos": "Ctrl+Shift+L",
+        "linux": "Ctrl+Shift+L"
+      }
+    }
+  },
+  "icons": {
+    "16": "icontest.png",
+    "48": "icontest.png",
+    "128": "icontest.png"
+  },
+  "manifest_version": 2
+}

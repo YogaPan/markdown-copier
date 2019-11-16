@@ -13,9 +13,7 @@ const copyToClipBoard = markdownLink => {
 }
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  const copyStatus = copyToClipBoard(
-    `[${request.payload.title}](${request.payload.url})`
-  )
+  const copyStatus = copyToClipBoard(request.payload)
   sendResponse({ result: copyStatus ? 'success' : 'failure' })
 })
 

@@ -2,9 +2,10 @@
   "name": "Markdown Copier",
   "version": "0.0.1",
   "description": "Markdown Copier",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "contextMenus"],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "persistant": true
   },
   "browser_action": {
     "default_icon": "icontest.png",

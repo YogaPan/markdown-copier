@@ -1,0 +1,22 @@
+const copyToClipBoard = markdownLink => {
+  const hiddenInput = document.createElement('input')
+  document.body.appendChild(hiddenInput)
+
+  hiddenInput.value = markdownLink
+  hiddenInput.select()
+  const copyStatus = document.execCommand('copy')
+
+  window.getSelection().removeAllRanges()
+  hiddenInput.remove()
+
+  return copyStatus
+}
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  const copyStatus = copyToClipBoard(
+    `[${request.payload.title}](${request.payload.url})`
+  )
+  sendResponse({ result: copyStatus ? 'success' : 'failure' })
+})
+
+console.log('Markdown Copier content script loaded.')

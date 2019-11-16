@@ -1,28 +1,9 @@
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
-    chrome.declarativeContent.onPageChanged.addRules([
-      {
-        // conditions: [
-        //   new chrome.declarativeContent.PageStateMatcher({
-        //     pageUrl: { hostEquals: 'developer.chrome.com' }
-        //   })
-        // ],
-        actions: [new chrome.declarativeContent.ShowPageAction()]
-      }
-    ])
-  })
-})
+chrome.browserAction.onClicked.addListener(tab =>
+  chrome.tabs.sendMessage(
+    tab.id,
+    { action: 'COPY', payload: { title: tab.title, url: tab.url } },
+    response => console.log(`copy ${response.result}`)
+  )
+)
 
-// chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
-//   chrome.declarativeContent.onPageChanged.addRules([
-//     {
-//       conditions: [
-//         new chrome.declarativeContent.PageStateMatcher({
-//           pageUrl: { hostEquals: 'developer.chrome.com' }
-//         })
-//       ],
-//       actions: [new chrome.declarativeContent.ShowPageAction()]
-//     }
-//   ])
-// })
-console.log('background loaded!')
+console.log('markdown copier background script loaded.')

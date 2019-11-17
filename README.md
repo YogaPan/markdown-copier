@@ -4,7 +4,7 @@
 
 ### Manually Install
 
-Step 1: Download [crx file](./releases):
+Step 1: Download [crx file](https://github.com/YogaPan/markdown-copier/releases):
 
 ![download.png](./img/download.png)
 

@@ -1,20 +1,31 @@
-# Mark Down Copier
+# Markdown Copier
 
 ## Installation
 
 ### Manually Install
 
-[Releases · YogaPan/markdown-copier](https://github.com/YogaPan/markdown-copier/releases)
+Step 1: Download crx file:
 
-### Search from Chrome Webstore
+go to [Releases](./releases)
+![download.png](./img/download.png)
+
+Step 2: Loaded from chrome extensions page
+
+go to [chrome extension page](chrome://extensions/)
+![Open Developer Mode](./img/developer_mode.png)
+![Load crx File](./img/load_crx.png)
+
+Step 3: Reload Web Page
+
+### Chrome Web Store
 
 TODO
 
 ## Usage
 
-1. right click link and copy
+1. right click link
 
-2. click icon
+2. click extension icon
 
 3. shortcut `Command + Shift + L` for Mac, `Ctrl + Shift + L` for Windows
 

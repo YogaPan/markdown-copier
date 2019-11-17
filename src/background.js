@@ -23,7 +23,7 @@ chrome.browserAction.onClicked.addListener(handleBrowserAction)
 
 chrome.contextMenus.create({
   title: 'Copy Url as [title](url) format',
-  contexts: ['all'],
+  contexts: ['link'],
   onclick: handleMenuClick
 })
 

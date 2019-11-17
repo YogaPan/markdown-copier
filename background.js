@@ -6,24 +6,20 @@ const toMarkdownFormat = (title, url) => {
   return `[${title}](${url})`
 }
 
-chrome.browserAction.onClicked.addListener(tab =>
+const sendCopyAction = (tabId, markdownLink) =>
   chrome.tabs.sendMessage(
-    tab.id,
-    { action: 'COPY', payload: toMarkdownFormat(tab.title, tab.url) },
+    tabId,
+    { action: 'COPY', payload: markdownLink },
     response => console.log(`copy ${response.result}`)
   )
-)
 
-const handleMenuClick = (info, tab) => {
-  chrome.tabs.sendMessage(
-    tab.id,
-    {
-      action: 'COPY',
-      payload: toMarkdownFormat(info.selectionText, info.linkUrl)
-    },
-    response => console.log(`copy ${response.result}`)
-  )
-}
+const handleBrowserAction = tab =>
+  sendCopyAction(tab.id, toMarkdownFormat(tab.title, tab.url))
+
+const handleMenuClick = (info, tab) =>
+  sendCopyAction(tab.id, toMarkdownFormat(info.selectionText, info.linkUrl))
+
+chrome.browserAction.onClicked.addListener(handleBrowserAction)
 
 chrome.contextMenus.create({
   title: 'Copy Url as [title](url) format',

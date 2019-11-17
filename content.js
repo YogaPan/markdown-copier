@@ -17,4 +17,4 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   sendResponse({ result: copyStatus ? 'success' : 'failure' })
 })
 
-console.log('Markdown Copier content script loaded.')
+console.log('markdown copier content script loaded.')

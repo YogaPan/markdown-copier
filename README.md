@@ -4,14 +4,12 @@
 
 ### Manually Install
 
-Step 1: Download crx file:
+Step 1: Download [crx file](./releases):
 
-go to [Releases](./releases)
 ![download.png](./img/download.png)
 
-Step 2: Loaded from chrome extensions page
+Step 2: Loaded from [chrome extension page](chrome://extensions/):
 
-go to [chrome extension page](chrome://extensions/)
 ![Open Developer Mode](./img/developer_mode.png)
 ![Load crx File](./img/load_crx.png)
 

@@ -8,7 +8,7 @@ Step 1: Download [crx file](./releases):
 
 ![download.png](./img/download.png)
 
-Step 2: Loaded from [chrome extension page](chrome://extensions/):
+Step 2: Loaded from chrome extension page chrome://extensions/
 
 ![Open Developer Mode](./img/developer_mode.png)
 ![Load crx File](./img/load_crx.png)

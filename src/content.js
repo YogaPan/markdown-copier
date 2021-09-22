@@ -17,4 +17,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   sendResponse({ result: copyStatus ? 'success' : 'failure' })
 })
 
+// eslint-disable-next-line no-console
 console.log('markdown copier content script loaded.')

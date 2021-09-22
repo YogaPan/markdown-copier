@@ -2,6 +2,8 @@
 
 協助文件撰寫者使用 [markdown link](https://www.markdownguide.org/basic-syntax/#links) 格式複製分頁網址、超連結的 Chrome extension。
 
+![markdown copycat logo](./images/logo.png)
+
 ## Installation
 
 ### Manually Install

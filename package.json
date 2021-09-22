@@ -1,0 +1,32 @@
+{
+  "name": "markdown-copier",
+  "version": "0.0.1",
+  "description": "TODO: Description",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YogaPan/markdown-copier.git"
+  },
+  "author": "Galtz Pan <galtz0321@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YogaPan/markdown-copier/issues"
+  },
+  "homepage": "https://github.com/YogaPan/markdown-copier#readme",
+  "keywords": [
+    "chrome",
+    "extension",
+    "chrome-extension"
+  ],
+  "scripts": {
+    "format": "prettier --write src/**/*.{js,json}",
+    "lint": "eslint src/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@galtz-library/eslint-config": "^0.2.0",
+    "@galtz-library/prettier-config": "^0.1.5",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1"
+  }
+}

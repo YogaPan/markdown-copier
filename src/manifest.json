@@ -1,6 +1,6 @@
 {
   "name": "Markdown Copycat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "協助文件撰寫者使用 markdown link 格式複製分頁網址、超連結的 Chrome extension。",
   "icons": {
     "16": "/images/icon.png",

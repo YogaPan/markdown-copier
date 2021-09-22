@@ -1,7 +1,7 @@
 {
-  "name": "Markdown Copier",
+  "name": "Markdown Copycat",
   "version": "0.0.1",
-  "description": "Markdown Copier",
+  "description": "協助文件撰寫者使用 markdown link 格式複製分頁網址、超連結的 Chrome extension。",
   "icons": {
     "16": "/images/icon.png",
     "32": "/images/icon.png",
@@ -18,7 +18,7 @@
   },
   "action": {
     "default_icon": "/images/icon.png",
-    "default_title": "Markdown Copier"
+    "default_title": "Markdown Copycat"
   },
   "content_scripts": [
     {

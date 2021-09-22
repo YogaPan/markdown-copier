@@ -12,4 +12,4 @@ chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
 })
 
 // eslint-disable-next-line no-console
-console.log('markdown copier content script loaded.')
+console.log('markdown copycat content script loaded.')

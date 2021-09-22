@@ -1,18 +1,18 @@
 {
-  "name": "markdown-copier",
+  "name": "markdown-copycat",
   "version": "0.0.1",
-  "description": "TODO: Description",
+  "description": "協助文件撰寫者使用 markdown link 格式複製分頁網址、超連結的 Chrome extension。",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YogaPan/markdown-copier.git"
+    "url": "git+https://github.com/YogaPan/markdown-copycat.git"
   },
   "author": "Galtz Pan <galtz0321@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YogaPan/markdown-copier/issues"
+    "url": "https://github.com/YogaPan/markdown-copycat/issues"
   },
-  "homepage": "https://github.com/YogaPan/markdown-copier#readme",
+  "homepage": "https://github.com/YogaPan/markdown-copycat#readme",
   "keywords": [
     "chrome",
     "extension",

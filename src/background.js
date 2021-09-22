@@ -35,7 +35,7 @@ chrome.runtime.onInstalled.addListener(() => {
     contexts: ['link']
   })
   // eslint-disable-next-line no-console
-  console.log('markdown copier background script loaded.')
+  console.log('markdown copycat background script loaded.')
 })
 
 chrome.action.onClicked.addListener(handleCopyPageTitle)

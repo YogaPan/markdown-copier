@@ -1,6 +1,8 @@
 {
   "extends": ["@galtz-library/eslint-config/lib/vanilla"],
   "env": {
-    "webextensions": true
+    "webextensions": true,
+    "browser": true,
+    "es2021": true
   }
 }

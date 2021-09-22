@@ -1,20 +1,14 @@
-const copyToClipBoard = markdownLink => {
-  const hiddenInput = document.createElement('input')
-  document.body.appendChild(hiddenInput)
-
-  hiddenInput.value = markdownLink
-  hiddenInput.select()
-  const copyStatus = document.execCommand('copy')
-
-  window.getSelection().removeAllRanges()
-  hiddenInput.remove()
-
-  return copyStatus
-}
-
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  const copyStatus = copyToClipBoard(request.payload)
-  sendResponse({ result: copyStatus ? 'success' : 'failure' })
+chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
+  navigator.clipboard
+    .writeText(request.payload)
+    .then(() => {
+      sendResponse({ result: 'success' })
+    })
+    .catch(err => {
+      // eslint-disable-next-line no-console
+      console.error(err)
+      sendResponse({ result: 'failed' })
+    })
 })
 
 // eslint-disable-next-line no-console

@@ -19,7 +19,7 @@
     "chrome-extension"
   ],
   "scripts": {
-    "format": "prettier --write src/**/*.{js,json}",
+    "format": "prettier --write src/**/*.js",
     "lint": "eslint src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
